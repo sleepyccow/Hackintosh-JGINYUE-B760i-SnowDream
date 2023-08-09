@@ -1,11 +1,8 @@
-# Hackintosh-OpenCore-EFI
+# Hackintosh 精粤JGINYUE B760i SnowDream
+
 <div align="center">
 <img src="http://jginyue.com.cn/uploadfile/2023/0217/20230217080235312.jpg" width="350px">
 </div>
-
-<h1 align="center">JGINYUE B760i Snow Dream D4</h1>
-<h3 align="center"> Hackintosh </h3>
-<h3 align="center"> OpenCore </h3>
 <br>
 
 ## 硬件 / Hardware
