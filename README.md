@@ -1,7 +1,7 @@
 # Hackintosh 精粤JGINYUE B760i SnowDream
 
 <div align="center">
-<img src="http://jginyue.com.cn/uploadfile/2023/0217/20230217080235312.jpg" width="350px">
+<img src="pic/jginyue-b760i-sd.jpg" width="350px" alt="精粤B760i"/>
 </div>
 <br>
 
