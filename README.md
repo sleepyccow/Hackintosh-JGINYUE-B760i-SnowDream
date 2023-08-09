@@ -1,4 +1,5 @@
 # Hackintosh-JGINYUE-B760i-SnowDream
+
 <div align="center">
 <img src="http://jginyue.com.cn/uploadfile/2023/0217/20230217080235312.jpg" width="350px">
 </div>
@@ -31,12 +32,16 @@
 
 ## 工作情况 / Fuctional
 ### 视频 / Display
-✅ 因13代核显无法驱动，固CPU选不带核显的。
-✅ 显卡RX5700为免驱显卡，因Nav21核心的缘故，为防止黑屏，启动项需添加 `agdpmod=pikera`
+|| 项目 | 内容 | 备注 |
+|-----| ----- | ----- | ----- |
+|✅| 核显 | UHD770 | 13代无法驱动 |
+|✅| 独立显卡 | RX5700 | 为防止黑屏，启动项需添加 `agdpmod=pikera` |
 <br>
 
 ### 音频 / Audio
-✅ 音频使用 `AppleALC.kext` 可驱动，对应ID为66；
+|| 项目 | 内容 | 备注 |
+|-----| ----- | ----- | ----- |
+|✅| 音频 | ALC897 | 使用 `AppleALC.kext` 可驱动，对应ID为66； |
 <br>
 
 ### 电源管理、睡眠、休眠 / Power, Sleep and Hibernation
@@ -46,39 +51,37 @@
 <br>
 
 ### 无线和蓝牙 / WiFi + Bluetooth
-因主板的无线接口支持PCIE通道，故可以使用博通的网卡；
-选购 博通BCM94352Z ，建议购买Fenvi版本，可直插直用；
+|| 项目 | 内容 | 备注 |
+|-----| ----- | ----- | ----- |
+|✅| 无线 | 博通BCM94352Z | 建议购买Fenvi版本，可直插直用 |
+|✅| 蓝牙 | 博通BCM94352Z | 建议购买Fenvi版本，可直插直用 |
 <br>
 
 ### USB端口 / USB Port
-#### XhciPortLimit 方法
-OpenCore升级到0.9.3版本之后，可以直接使用 XhciPortLimit 解除USB限制；
-<br>
+|| 项目 | 内容 | 
+|-----| ----- | ----- | 
+|✅| XhciPortLimit方法 | OpenCore升级到0.9.3版本之后，可以直接使用 XhciPortLimit 解除USB限制； |
+|✅| USB定制方法 | 使用工具重新定制端口即可； |
 
-#### USB定制方法
-使用工具重新定制端口即可；
 <br>
 
 ## BIOS 相关
-### 升级或降级 BIOS / Update or Downgrade BIOS Version
-最新的即可
-<br>
+|| 项目 | 内容 | 
+|-----| ----- | ----- | 
+|❌| 关闭 | Resizable BAR | 
+|❌| 关闭 | Fast Boot 快速启动 | 
+|❌| 关闭 | VT-d | 
+|❌| 关闭 | CSM | 
+|❌| 关闭 | Intel SGX | 
 
-### 修改 BIOS 设置 / BIOS Settings
-
-关闭 Resizable BAR
-关闭 安全启动
-关闭 Fast Boot 快速启动
-关闭 VT-d
-关闭 CSM
-关闭 Intel SGX
-
-开启 VT-X 
-开启 Above 4G decoding
-开启 Hyper-Threading
-开启 EHCI/XHCI Hand-off
-开启 OS type: Windows UEFI Mode (或者清除所有 Secure Boot Keys 然后选 `Other` )
-开启 DVMT Pre-Allocated(iGPU Memory): 64MB
+|| 项目 | 内容 | 
+|-----| ----- | ----- | 
+|✅| 开启 | VT-X |
+|✅| 开启 | Above 4G decoding |
+|✅| 开启 | Hyper-Threading |
+|✅| 开启 | EHCI/XHCI Hand-off |
+|✅| 开启 | OS type: Windows UEFI Mode (或者清除所有 Secure Boot Keys 然后选 `Other` ) |
+|✅| 开启 | DVMT Pre-Allocated(iGPU Memory): 64MB |
 <br>
 
 ## Refrence / 必读参考资料
@@ -93,4 +96,3 @@ OpenCore升级到0.9.3版本之后，可以直接使用 XhciPortLimit 解除USB�
 - [OpenCore 简体中文参考手册 (非官方)](https://oc.skk.moe)
 
 **务必阅读上述参考资料**
-
